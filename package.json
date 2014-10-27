@@ -1,0 +1,10 @@
+{
+  "name": "SistemaExpertoAuto",
+  "version": "1.0.0",
+  "description": "Sistema experto auto",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.10.0",
+    "ejs": "~1.0.0"
+  }
+}

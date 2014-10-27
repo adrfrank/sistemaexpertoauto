@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	background-color: #efefef;
+	font-size: 12px;
+}
+
+#road{
+	position: relative;
+	height: 150px;
+	border: 1px solid gray;
+	margin-top: 10px;
+	background-color: #ccc;
+}
+
+#car{
+	background-image: url('/static/car.png');
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	display: block;
+	border: 2px solid #fff;
+	position: absolute;
+	top: 50px; /*(150/2 - 50/2)*/
+	border-radius: 50%;
+	/*transition: all 0.2s;*/
+	font-size: 0px;
+}
+.obstacle{
+	background-color: brown;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 65px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	transition: all 0.1s;
+}
+
+.obstacle.big{
+	transform: scale(1.5,1.5);
+}
+
+.well{
+	margin-top: 10px;
+}
+
+/*----------MISC---------------*/
+.wrapper{
+	margin: 0 auto;
+	max-width: 920px !important;
+
+
+}

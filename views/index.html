@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistema Experto</title>
+	<link href="/static/css/bootstrap.css"  rel="stylesheet">
+	<link href="/static/css/slider.css"  rel="stylesheet">
+	<link href="/static/css/site.css" rel="stylesheet">
+</head>
+<body>
+	<header id='main-header' class="wrapper" >
+		<h1>Sistema experto<h1>
+	</header>
+	<section  class="wrapper">
+		<div id="opciones">
+			<button id="btn-reset" class="btn btn-primary"><span class="glyphicon glyphicon-repeat"></span> Reset</button>
+			<button id="btn-start" class="btn btn-default"><span class="glyphicon glyphicon-play"> </span><span class="text">Iniciar</span></button>
+			<button id="btn-addObstacle" class="btn btn-default"><span class="glyphicon glyphicon-plus"> </span><span class="text">Agregar Obstaculo</span></button>
+		</div>
+		<div>
+			<!-- <input id="slider1" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show"> -->
+			<div id="road" > 
+				<div id="car" >Carro</div>
+				<!-- <div class="obstacle"></div> -->
+			</div>
+			<div class="well" >
+				<div class='row' >
+					<div class="col-md-3">Obstaculos: </div>
+					<div class="col-md-3 text-info" id="inObstaculos">Despejado</div>
+					<div class="col-md-3">Velocidad: </div>
+					<div class="col-md-3 text-info" id="outSpeed">100%</div>
+				</div>
+			</div>
+			
+			<div id="obstacles">
+				<h4>Obstaculos: </h4>
+				<table id="tblObstacles" class="table table-hover">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Posicion</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						
+						
+					</tbody>
+				</table>
+				<table id="tblClone"  class="table table-bordered hidden" >
+					
+					<tbody>
+						<tr>
+							<td class="num">1</td>
+							<td>
+								<input class="slider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide">
+							</td>
+							<td>
+								<button class="btn btn-primary btn-delObstacle" ><span class="glyphicon glyphicon-remove"></span></button>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<footer class="wrapper">
+		<h6>Adrian Francisco Gonzalez Gutierrez | 212354584</h3>
+	</footer>
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js" ></script>
+	<script type="text/javascript" src="/static/js/bootstrap.js" ></script>
+	<script type="text/javascript" src="/static/js/bootstrap-slider.js" ></script>
+	<script type="text/javascript" src="/static/js/index.js" ></script>
+
+</body>
+</html>
